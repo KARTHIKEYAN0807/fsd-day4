@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title Caps Strings</title>
+</head>
+<body>
+    <script>
+        let strings = ["hello", "world", "javascript"];
+        let titleCaps = function(arr) {
+            return arr.map(function(str) {
+                return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+            });
+        };
+        console.log(titleCaps(strings));
+    </script>
+</body>
+</html>

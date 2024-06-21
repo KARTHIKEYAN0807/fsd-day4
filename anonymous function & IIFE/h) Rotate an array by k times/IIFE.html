@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rotate Array</title>
+</head>
+<body>
+    <script>
+        (function(arr, k) {
+            k = k % arr.length;
+            let rotatedArray = arr.slice(k).concat(arr.slice(0, k));
+            console.log(rotatedArray);
+        })([1, 2, 3, 4, 5], 2);
+    </script>
+</body>
+</html>

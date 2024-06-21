@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Palindromes</title>
+</head>
+<body>
+    <script>
+        (function(arr) {
+            let isPalindrome = function(str) {
+                return str === str.split('').reverse().join('');
+            };
+            let palindromes = arr.filter(isPalindrome);
+            console.log(palindromes);
+        })(["madam", "racecar", "apple", "level", "hello"]);
+    </script>
+</body>
+</html>

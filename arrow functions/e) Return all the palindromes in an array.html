@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Palindromes</title>
+</head>
+<body>
+    <script>
+        let words = ["madam", "racecar", "apple", "level", "hello"];
+        let isPalindrome = (str) => str === str.split('').reverse().join('');
+        let palindromes = (arr) => arr.filter(isPalindrome);
+        console.log(palindromes(words));
+    </script>
+</body>
+</html>
